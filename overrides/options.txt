@@ -1,0 +1,5 @@
+renderDistance:12
+simulationDistance:9
+graphicsMode:1
+gamma:1.0
+maxFps:160

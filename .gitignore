@@ -1,0 +1,12 @@
+# Build output (the pack zip we export for CurseForge)
+build/
+*.zip
+
+# Local testing junk
+run/
+logs/
+crash-reports/
+
+# OS noise
+Thumbs.db
+.DS_Store
