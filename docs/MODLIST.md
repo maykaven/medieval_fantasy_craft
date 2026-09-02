@@ -61,6 +61,7 @@ pinned in [manifest.json](../manifest.json).
 | Hyper Realistic Sky | v3.9 | 622551 | 8285672 | Resource pack, Nuit-native format, tagged 26.2. Realistic sun/moon/clouds when shaders are off |
 | Epic Adventures | 1.21.11+67 | 406771 | 8533674 | **Default block/item textures** — 32x stylized-realistic medieval fantasy. Newest tag is 1.21.11: loads on 26.2 with an "older pack" warning; 26.2's new blocks fall back to vanilla textures until it updates |
 | Patrix 32x (basic) | 26.2 | 785390 | 8788976 | **Optional alternative** — realistic, made for shaders (labPBR normals/speculars; enable labPBR options in Bliss). Looks wrong without shaders. Pick Epic Adventures OR Patrix, not both |
+| Fresh Animations | 1.10.5 | 453763 | 7854681 | Lively animal/mob models + animations via EMF (by FreshLX, who also made Patrix's mob animations). **Load ABOVE Patrix** — overrides Patrix's WIP 26.2 mob models with working ones |
 
 ## Not in the pack yet (watching / porting)
 

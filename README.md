@@ -63,6 +63,9 @@ app imports and the CurseForge site accepts as a modpack submission.
    **Never enable Epic Adventures and Patrix at the same time** — stacked packs
    mix their custom entity textures and mobs render broken, with missing or
    misplaced parts.
+   Enabled-pack order, top → bottom: **Hyper Realistic Sky → Fresh Animations →
+   Patrix (or Epic Adventures)**. Fresh Animations must sit above the texture
+   pack so its animal models win.
    *Expectation check:* while a shader pack is active, the shader draws its own sky
    — and Photon's realistic sun, moon and Milky Way are the star of the show. The
    Nuit + Hyper Realistic Sky skybox is what makes the sky gorgeous when you play
@@ -78,9 +81,10 @@ app imports and the CurseForge site accepts as a modpack submission.
   unverified on 26.2. Bliss is the verified default.
 - **Nuit**: Nether skies don't work yet with the Hyper Realistic Sky pack.
 - **Patrix mobs on 26.2 are work-in-progress upstream**: with EMF custom models
-  on, some animals render distorted (misplaced legs/heads). Workaround: Mods →
-  Entity Model Features → set the affected animals (or all entities) to vanilla
-  models. Re-test after each Patrix update — blocks/items are unaffected.
+  on, Patrix's own animal models render distorted (misplaced legs/heads). Fix:
+  keep **Fresh Animations enabled ABOVE Patrix** in the resource pack list — its
+  working animal models (by the same animator who made Patrix's) override the
+  broken ones. Keep EMF custom models ON for this to work.
 - **Magic mods**: nothing in the Ars Nouveau / Iron's Spells class has reached 26.2
   yet (they're on 1.21.1). See [docs/PORTING.md](docs/PORTING.md) for the plan.
 - **26.3** lands this month; the pack bumps once Fabric API / Sodium / Iris / DH
