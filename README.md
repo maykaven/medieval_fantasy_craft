@@ -77,6 +77,10 @@ app imports and the CurseForge site accepts as a modpack submission.
 - **Photon**: no 26.2-tagged release yet (newest is 26.1.2) — included as optional,
   unverified on 26.2. Bliss is the verified default.
 - **Nuit**: Nether skies don't work yet with the Hyper Realistic Sky pack.
+- **Patrix mobs on 26.2 are work-in-progress upstream**: with EMF custom models
+  on, some animals render distorted (misplaced legs/heads). Workaround: Mods →
+  Entity Model Features → set the affected animals (or all entities) to vanilla
+  models. Re-test after each Patrix update — blocks/items are unaffected.
 - **Magic mods**: nothing in the Ars Nouveau / Iron's Spells class has reached 26.2
   yet (they're on 1.21.1). See [docs/PORTING.md](docs/PORTING.md) for the plan.
 - **26.3** lands this month; the pack bumps once Fabric API / Sodium / Iris / DH
