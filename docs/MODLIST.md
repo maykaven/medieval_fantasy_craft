@@ -52,6 +52,7 @@ pinned in [manifest.json](../manifest.json).
 | Item | Version | Project ID | File ID | Notes |
 |---|---|---|---|---|
 | Nuit | 1.0.0-beta.4 | 408209 | 8294703 | Skybox engine (FabricSkyboxes renamed). Nuit Interop NOT needed — our sky pack is Nuit-native. Known: Nether skies don't work yet |
+| Continuity | 3.0.1+26.2 | 531351 | 8261100 | OptiFine-format connected textures on Fabric (Sodium/Iris-compatible). Required by Patrix — without it Patrix grass renders an "enable connected textures" placeholder |
 | Bliss Shader | v2.1.2 | 610844 | 7251787 | **Default shader.** Tagged 26.2; ≥2.1.0 = Distant Horizons support |
 | Photon Shader | v1.3b | 1312687 | 7927503 | **Optional.** Best realistic sun/moon/sky, DH support — but newest tag is 26.1.2, unconfirmed on 26.2. Marked non-required in the manifest |
 | Hyper Realistic Sky | v3.9 | 622551 | 8285672 | Resource pack, Nuit-native format, tagged 26.2. Realistic sun/moon/clouds when shaders are off |
