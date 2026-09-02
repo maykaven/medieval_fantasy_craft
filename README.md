@@ -14,6 +14,7 @@ dungeons and knights.
 | Great shaders | **Iris + Sodium**, with **Bliss v2.1.2** as the default shader (verified on 26.2, shades Distant Horizons' far terrain). **Photon** included as the optional cinematic pick — best-in-class realistic sun/moon/sky, but its newest build is tagged 26.1.2, so treat it as "try and see" until it updates |
 | Real skybox sun & moon | **Nuit** (successor of FabricSkyboxes) + the **Hyper Realistic Sky** resource pack (v3.9, Nuit-native format) |
 | Medieval fantasy world | **Towns & Towers**, **ChoiceTheorem's Overhauled Villages**, **Better Combat**, **Farmer's Delight Refabricated**, **Waystones** |
+| Medieval look | **Epic Adventures** 32x textures (stylized-realistic medieval fantasy) as the default, **Patrix 32x** as the optional shader-maxed realistic alternative |
 
 Full mod list with versions, IDs and licenses: [docs/MODLIST.md](docs/MODLIST.md).
 Mods still stuck on older Minecraft (and how we port them ourselves): [docs/PORTING.md](docs/PORTING.md).
@@ -51,7 +52,12 @@ app imports and the CurseForge site accepts as a modpack submission.
    - If the far sky/terrain ever looks broken with shaders: DH → Advanced →
      Advanced Graphics Settings → **Transparency = Complete**, **Render Quality =
      Medium**, then restart.
-4. **Skybox**: enable the **Hyper Realistic Sky** resource pack.
+4. **Resource packs**: enable **Epic Adventures** (medieval textures — it's tagged
+   1.21.11, so confirm the "made for an older version" prompt; fine on 26.2) and
+   **Hyper Realistic Sky** on top of it. Prefer maximum realism over medieval
+   flavor? Swap Epic Adventures for **Patrix** instead (never both), and turn on
+   the labPBR emissive/subsurface options in Bliss's shader settings — Patrix is
+   built for shaders and looks wrong without them.
    *Expectation check:* while a shader pack is active, the shader draws its own sky
    — and Photon's realistic sun, moon and Milky Way are the star of the show. The
    Nuit + Hyper Realistic Sky skybox is what makes the sky gorgeous when you play
