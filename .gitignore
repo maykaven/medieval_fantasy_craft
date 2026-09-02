@@ -1,6 +1,6 @@
 # Build output (the pack zip we export for CurseForge)
+# Committed copies for download live in releases/
 build/
-*.zip
 
 # Local testing junk
 run/
