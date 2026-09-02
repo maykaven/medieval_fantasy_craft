@@ -57,8 +57,12 @@ app imports and the CurseForge site accepts as a modpack submission.
    **Hyper Realistic Sky** on top of it. Prefer maximum realism over medieval
    flavor? Swap Epic Adventures for **Patrix** instead (never both), and turn on
    the labPBR emissive/subsurface options in Bliss's shader settings — Patrix is
-   built for shaders and looks wrong without them. (The Continuity mod in the pack
-   supplies the connected textures Patrix depends on — no setup needed.)
+   built for shaders and looks wrong without them. (The Continuity, Entity Model
+   Features and Entity Texture Features mods in the pack supply the connected
+   textures and custom mob models/textures Patrix depends on — no setup needed.)
+   **Never enable Epic Adventures and Patrix at the same time** — stacked packs
+   mix their custom entity textures and mobs render broken, with missing or
+   misplaced parts.
    *Expectation check:* while a shader pack is active, the shader draws its own sky
    — and Photon's realistic sun, moon and Milky Way are the star of the show. The
    Nuit + Hyper Realistic Sky skybox is what makes the sky gorgeous when you play
