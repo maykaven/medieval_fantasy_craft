@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "Race body scaling for DAG Mod races (Medieval Fantasy Craft RPG)",
+    "min_format": 107,
+    "max_format": 999
+  }
+}
