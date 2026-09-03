@@ -15,6 +15,7 @@ dungeons and knights.
 | Real skybox sun & moon | **Nuit** (successor of FabricSkyboxes) + the **Hyper Realistic Sky** resource pack (v3.9, Nuit-native format) |
 | Medieval fantasy world | **Towns & Towers**, **ChoiceTheorem's Overhauled Villages**, **Better Combat**, **Farmer's Delight Refabricated**, **Waystones** |
 | Medieval look | **Epic Adventures** 32x textures (stylized-realistic medieval fantasy) as the default, **Patrix 32x** as the optional shader-maxed realistic alternative |
+| Fantasy races | **DAG Mod** — playable Elf/Dwarf/Orc/Human with classes and quests (embedded, experimental); **Goblin Traders** and **Illager Invasion** populate the world. The full elves/dwarves/orcs faction experience arrives when the Middle-earth mod reaches 26.x (see docs/MODLIST.md watch list) |
 
 Full mod list with versions, IDs and licenses: [docs/MODLIST.md](docs/MODLIST.md).
 Mods still stuck on older Minecraft (and how we port them ourselves): [docs/PORTING.md](docs/PORTING.md).

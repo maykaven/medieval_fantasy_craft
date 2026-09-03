@@ -55,6 +55,19 @@ pinned in [manifest.json](../manifest.json).
 | Farmer's Delight Refabricated | 3.6.21 | 993166 | 8787634 | Cooking/farming (the only Farmer's Delight on 26.2; Fabric-only, MIT) |
 | Waystones | 26.2.0.11 | 245755 | 8778790 | Fast travel between discovered waystones |
 
+### Fantasy races & creatures
+
+| Mod | Version | Project ID | File ID | Notes |
+|---|---|---|---|---|
+| DAG Mod | 1.10.0 | Modrinth `lFbgrVlP` | embedded jar | **Playable Human/Dwarf/Elf/Orc races** × Warrior/Mage/Rogue classes, quests, merchant NPCs, bosses, extra dimensions. CC0 — jar embedded in overrides/mods (fetched by build.ps1, ~97MB, not on CurseForge). Experimental: small solo project, remove `dagmod-*.jar` from the instance mods folder if it misbehaves |
+| Goblin Traders | 1.12.0 | 363703 | 8403603 | Goblin merchant NPCs underground and in the Nether (MrCrayfish official). Requires Framework |
+| Framework | 0.13.26 | 549225 | 8403587 | Goblin Traders dependency |
+| Illager Invasion | 26.2.0 | 891324 | 8275993 | New illager types, structures and raid pressure — the closest 26.2-Fabric thing to orc war bands. Requires Puzzles Lib + Forge Config API Port |
+| Puzzles Lib | 26.2.3 | 495476 | 8581779 | Illager Invasion dependency |
+| Forge Config API Port | 26.2.1 | 547434 | 8292030 | Illager Invasion dependency |
+
+**Watch list for the real payoff:** [Middle-earth by Jukoz](https://modrinth.com/mod/middle-earth) — full elves/dwarves/orcs factions with gear and world content, Fabric, currently 1.21.8 beta; check monthly for a 26.x build and add it the moment it lands. Runners-up: Iourus Races (exact races, 26.2 but NeoForge-only), Bokoblins (26.x NeoForge-only), Mobs of Mythology (1.21.1). Alternatives to DAG if it disappoints: Origins: Legacy (CF 1429195, the 26.2 Origins engine — its stock origins aren't fantasy races though) or Fabled Roots (Modrinth, race analogues, GPL3).
+
 ### Sky & shaders
 
 | Item | Version | Project ID | File ID | Notes |
