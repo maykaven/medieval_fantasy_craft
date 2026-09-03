@@ -18,6 +18,14 @@ pinned in [manifest.json](../manifest.json).
 | FerriteCore | 9.0.0 | 459857 | 7806040 | Memory usage — matters at big LOD radii |
 | Entity Culling | 1.10.5 | 448233 | 8287118 | Skips rendering hidden entities |
 | ImmediatelyFast | 1.16.4 | 686911 | 8749433 | Rendering batch optimization |
+| ScalableLux | 0.2.1 | 1055925 | 8235664 | Starlight-based light engine — faster light updates during chunk gen (by C2ME's org) |
+| Fast Noise | 1.0.40+26.2 | 1460602 | 8639892 | Worldgen noise optimization (~10–18% faster gen), datapack-safe with Terralith/Tectonic. Successor to archived Noisium |
+| BadOptimizations | 2.4.1 | 949555 | 8260341 | Client tick: lightmap-update and sky-color caching |
+| Particle Core | 0.3.3+26.2 | 985426 | 8390340 | Particle culling and render optimization; Sodium-verified |
+| MoreCulling | 1.8.1 | 630104 | 8563691 | Culls blockstates, leaves, item frames, sign text. Needs Cloth Config. If a modded block face ever vanishes, toggle the matching option in its settings |
+| FastQuit | 3.1.5 | 708967 | 8537736 | Exit to title immediately; world saves in the background |
+| Krypton | 0.3.1 | 428912 | 8433993 | Network stack optimization — marginal in singleplayer, matters when hosting |
+| C2ME | 0.4.1-beta.1.0 | 533097 | 8294509 | **Optional (unticked at import)** — multithreaded chunk generation, the biggest worldgen speedup on many-core CPUs (Terralith-benchmarked; pairs with Lithium + ScalableLux per its own docs). Has DH interop history: test your first session; if world load freezes or errors spam, set `gcFreeChunkSerializer=false` and `replaceImpl=false` in `config/c2me.toml`, or remove it |
 
 ### Libraries (dependencies)
 

@@ -87,6 +87,12 @@ app imports and the CurseForge site accepts as a modpack submission.
   emf_compat_not_enough_animations): they target EMF 3.3.2's API and crash the
   game with the EMF 3.3.3 in this pack. Not Enough Animations works fine
   without them.
+- **C2ME is optional** (multithreaded chunk generation — big worldgen speedup on
+  many-core CPUs, but it has interop history with Distant Horizons). If you
+  enable it, test one session: on world-load freezes or log error spam, set
+  `gcFreeChunkSerializer=false` and `replaceImpl=false` in `config/c2me.toml`,
+  or remove the mod. Skip Nvidium entirely — it turns itself off while Iris
+  shaders are active, so it does nothing in this pack.
 - **Patrix mobs on 26.2 are work-in-progress upstream**: with EMF custom models
   on, Patrix's own animal models render distorted (misplaced legs/heads). Fix:
   keep **Fresh Animations enabled ABOVE Patrix** in the resource pack list — its
