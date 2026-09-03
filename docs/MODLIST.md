@@ -60,6 +60,8 @@ pinned in [manifest.json](../manifest.json).
 | Mod | Version | Project ID | File ID | Notes |
 |---|---|---|---|---|
 | DAG Mod | 1.10.0 | Modrinth `lFbgrVlP` | embedded jar | **RPG edition only.** Playable Human/Dwarf/Elf/Orc races × Warrior/Mage/Rogue classes, quests, merchant NPCs, bosses, extra dimensions. CC0 — jar embedded in overrides-rpg/mods (fetched by build.ps1, ~97MB, not on CurseForge). Experimental: small solo project, remove `dagmod-*.jar` from the instance mods folder if it misbehaves |
+| Freecam | 1.4.1 | Modrinth `XeEZ3fK2` | embedded jar | **Both editions.** Detached out-of-body camera - toggle it, then "Control Player" to move your body while the camera stays put, and "Toggle Outline Player" to find yourself. MIT, client-side only, fetched by build.ps1. Keybinds under Options -> Controls -> Freecam. Version-bound to `<26.3.0-0`, so it needs a bump with 26.3 |
+| Race Scale | 0.1.0 | ours | embedded jar | **RPG edition only.** Shapes the player body to the race registered with DAG's Innkeeper Garrick: dwarf 20% shorter, elf 20% taller (both keeping a natural-sized head), orc 10% bigger all over. Reads DAG's own race attribute modifiers, so registering with Garrick is the only step. Source in `racescale-mod/`, built with `bash racescale-mod/build.sh` (needs JDK 25) |
 | Goblin Traders | 1.12.0 | 363703 | 8403603 | Goblin merchant NPCs underground and in the Nether (MrCrayfish official). Requires Framework |
 | Framework | 0.13.26 | 549225 | 8403587 | Goblin Traders dependency |
 | Illager Invasion | 26.2.0 | 891324 | 8275993 | New illager types, structures and raid pressure — the closest 26.2-Fabric thing to orc war bands. Requires Puzzles Lib + Forge Config API Port |

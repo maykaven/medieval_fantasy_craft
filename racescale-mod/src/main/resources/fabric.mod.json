@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "racescale",
+  "version": "0.1.0",
+  "name": "Race Scale",
+  "description": "Per-axis player body scaling for DAG Mod races.",
+  "license": "MIT",
+  "environment": "*",
+  "mixins": [
+    "racescale.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25"
+  }
+}

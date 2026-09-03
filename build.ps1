@@ -24,6 +24,16 @@ function Build-Pack($manifestFile, $modlistFile, $extraOverrides, $slug) {
     Write-Host "Built $out"
 }
 
+# Freecam (MIT, client-side) - Modrinth-only, so fetched rather than listed in the
+# manifest. Ships in both editions: an out-of-body camera is generally useful, and
+# it is how you inspect your own character.
+$freecamJar = Join-Path $root 'overrides/mods/freecam-fabric-1.4.1+mc26.2.jar'
+if (-not (Test-Path $freecamJar)) {
+    New-Item -ItemType Directory -Force (Join-Path $root 'overrides/mods') | Out-Null
+    Write-Host "Fetching Freecam 1.4.1 from Modrinth..."
+    Invoke-WebRequest 'https://cdn.modrinth.com/data/XeEZ3fK2/versions/r125dZ2j/freecam-fabric-1.4.1%2Bmc26.2.jar' -OutFile $freecamJar
+}
+
 if ($Variant -in @('rpg','all')) {
     # Modrinth-only embedded jar (CC0); fetched, not committed
     $dagJar = Join-Path $root 'overrides-rpg/mods/dagmod-1.10.0.jar'
@@ -31,6 +41,13 @@ if ($Variant -in @('rpg','all')) {
         New-Item -ItemType Directory -Force (Join-Path $root 'overrides-rpg/mods') | Out-Null
         Write-Host "Fetching DAG Mod 1.10.0 from Modrinth..."
         Invoke-WebRequest 'https://cdn.modrinth.com/data/lFbgrVlP/versions/L71Ja93p/dagmod-1.10.0.jar' -OutFile $dagJar
+    }
+
+    # Our own race-scaling mod is committed (7KB) but built from source, so fail
+    # loudly rather than shipping an RPG zip without it.
+    $raceJar = Join-Path $root 'overrides-rpg/mods/racescale-0.1.0.jar'
+    if (-not (Test-Path $raceJar)) {
+        throw "Missing $raceJar - build it with: bash racescale-mod/build.sh"
     }
 }
 if ($Variant -in @('world','all')) { Build-Pack 'manifest.json' 'modlist.html' $null 'medieval-fantasy-craft' }

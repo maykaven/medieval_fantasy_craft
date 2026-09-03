@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.medievalfantasy.racescale.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "EntityMixin"
+  ],
+  "client": [
+    "AvatarRendererMixin",
+    "AvatarRenderStateMixin",
+    "HumanoidModelMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

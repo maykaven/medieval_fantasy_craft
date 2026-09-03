@@ -2,10 +2,15 @@
 # World-edition zips are small and committed to releases/ for download.
 # RPG-edition zips embed a ~97MB jar — build locally via ./build.ps1 -Variant rpg
 /build/
+racescale-mod/build/
+racescale-mod/.gradle/
 releases/medieval-fantasy-craft-rpg-*.zip
 
-# Embedded jars are fetched by build.ps1, not committed
+# Third-party jars are fetched by build.ps1, not committed
 overrides-rpg/mods/*.jar
+overrides/mods/*.jar
+# ...except our own, which is 7KB and built from racescale-mod/
+!overrides-rpg/mods/racescale-*.jar
 
 # Local testing junk
 run/
