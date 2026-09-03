@@ -52,20 +52,19 @@ app imports and the CurseForge site accepts as a modpack submission.
    - If the far sky/terrain ever looks broken with shaders: DH → Advanced →
      Advanced Graphics Settings → **Transparency = Complete**, **Render Quality =
      Medium**, then restart.
-4. **Resource packs**: enable **Epic Adventures** (medieval textures — it's tagged
-   1.21.11, so confirm the "made for an older version" prompt; fine on 26.2) and
-   **Hyper Realistic Sky** on top of it. Prefer maximum realism over medieval
-   flavor? Swap Epic Adventures for **Patrix** instead (never both), and turn on
-   the labPBR emissive/subsurface options in Bliss's shader settings — Patrix is
-   built for shaders and looks wrong without them. (The Continuity, Entity Model
-   Features and Entity Texture Features mods in the pack supply the connected
-   textures and custom mob models/textures Patrix depends on — no setup needed.)
-   **Never enable Epic Adventures and Patrix at the same time** — stacked packs
-   mix their custom entity textures and mobs render broken, with missing or
-   misplaced parts.
-   Enabled-pack order, top → bottom: **Hyper Realistic Sky → Fresh Animations →
-   Patrix (or Epic Adventures)**. Fresh Animations must sit above the texture
-   pack so its animal models win.
+4. **Resource packs — pre-configured**: the pack ships with the proven setup
+   already enabled, top → bottom: **Hyper Realistic Sky → FA addons (Spiders,
+   Quivers, Emissive, Details) → Fresh Animations → Patrix**. Verify it looks
+   like that and you're done. For Patrix, turn on the labPBR emissive/subsurface
+   options in Bliss's shader settings — it's built for shaders and looks wrong
+   without them. (Continuity, EMF and ETF in the pack supply the connected
+   textures and entity models/textures everything here depends on.)
+   Alternate base looks — swap into Patrix's bottom slot, **never two base packs
+   at once** (stacked base packs mix entity textures and mobs render broken):
+   **Alacrity** (rustic-realistic, complete) or **Epic Adventures** (painterly
+   medieval; tagged 1.21.11 — confirm the "older version" prompt, fine on 26.2).
+   Whatever the base, **Fresh Animations stays above it** so its animal models
+   win.
    *Expectation check:* while a shader pack is active, the shader draws its own sky
    — and Photon's realistic sun, moon and Milky Way are the star of the show. The
    Nuit + Hyper Realistic Sky skybox is what makes the sky gorgeous when you play
@@ -80,6 +79,10 @@ app imports and the CurseForge site accepts as a modpack submission.
 - **Photon**: no 26.2-tagged release yet (newest is 26.1.2) — included as optional,
   unverified on 26.2. Bliss is the verified default.
 - **Nuit**: Nether skies don't work yet with the Hyper Realistic Sky pack.
+- **Do not install the "EMF Compat" bridge mods** (emf_compat_core /
+  emf_compat_not_enough_animations): they target EMF 3.3.2's API and crash the
+  game with the EMF 3.3.3 in this pack. Not Enough Animations works fine
+  without them.
 - **Patrix mobs on 26.2 are work-in-progress upstream**: with EMF custom models
   on, Patrix's own animal models render distorted (misplaced legs/heads). Fix:
   keep **Fresh Animations enabled ABOVE Patrix** in the resource pack list — its
