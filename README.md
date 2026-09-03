@@ -45,10 +45,14 @@ app imports and the CurseForge site accepts as a modpack submission.
 2. **Shaders**: Options → Video Settings → Shader Packs → select **Bliss**. Feeling
    lucky? Try **Photon** for the most realistic sun/moon/sky — if it misbehaves on
    26.2, switch back to Bliss until Photon ships a 26.2 build.
-3. **View distance**: Options → Distant Horizons → set LOD render distance to
-   **256** to start (push toward 512+ only if RAM/GPU allow; vanilla render
-   distance stays at ~12, DH draws everything beyond it). First world load spends a
-   few minutes generating LODs — the horizon fills in as you play.
+3. **View distance — pre-configured**: Distant Horizons ships hard-wired to a
+   **512-chunk LOD radius** (~8 km horizon) with generation capped to match and
+   CPU threading tamed (8 threads at half run-time) so the internal server never
+   starves — uncapped generation causes tick lag that "rewinds" fast block
+   breaking. Vanilla render distance stays at 12; DH draws everything beyond it.
+   The first hour in a new area generates the horizon in the background, then
+   it's cached. Don't raise maxGenerationRequestDistance above the render
+   radius.
    - If the far sky/terrain ever looks broken with shaders: DH → Advanced →
      Advanced Graphics Settings → **Transparency = Complete**, **Render Quality =
      Medium**, then restart.
