@@ -46,11 +46,52 @@ Phase-1 skins. Template: [Fabric example mod](https://fabricmc.net/develop/)
 (loom + yarn, same toolchain as docs/PORTING.md). Phase 2 starts only after
 Phase 1 ships and tells us what the world actually needs.
 
+## Elven building standards
+
+Fixed decisions every elven structure follows, so buildings stay consistent as the
+template pool grows.
+
+### Doorways: 2.5 blocks of clearance
+
+An elf player stands **2.16 blocks** tall (the `racescale` datapack scales elves to
+1.2 - see [../racescale/README.md](../racescale/README.md)). A vanilla door gives
+only 2 blocks, so elves would have to sneak through their own houses. The elven
+doorway is therefore 2.5 blocks of clear opening:
+
+| | left jamb | opening | right jamb |
+|---|---|---|---|
+| y+2 | birch log | **birch slab, `type=top`** | birch log |
+| y+1 | birch log | door, upper half | birch log |
+| y | birch log | door, lower half | birch log |
+
+A top slab sits in the upper half of its block, leaving the lower half open. Two
+full blocks plus that half gives 2.5. This is exactly the "half block above the
+door" pattern - the slab both closes the wall and forms an open transom.
+
+Place one in a test world with `/trigger mythfolk_build set 1` (works without
+cheats); it runs `mythfolk:build/elf_door` at your feet, facing north.
+
+Orcs (scale 1.1 = 1.98 blocks) and dwarves (0.8 = 1.44) clear this too, so the
+pattern is safe to reuse outside elven builds.
+
+### Not yet possible: a single 2.5-block-tall door block
+
+A door *block* that is itself 2.5 blocks tall needs a custom block with its own
+shape and blockstate, which means Java and therefore Phase 2. Vanilla doors are
+exactly two blocks and no datapack can change that. The pattern above reaches the
+same clearance with vanilla blocks today.
+
+Making the door *look* elven is a Phase 1 job instead: retexture a door variant in
+`mythfolk/resourcepack`. Unlike the ETF entity rules, a block retexture applies to
+every door of that type in the world, so pick a wood the pack does not otherwise
+lean on.
+
 ## Milestones
 
-- [ ] **M0 — scaffolding**: `mythfolk/datapack` + `mythfolk/resourcepack` with
-  correct `pack.mcmeta` files (look up current pack_format numbers for MC 26.2
-  on minecraft.wiki/w/Pack_format — data and resource formats differ!)
+- [x] **M0 — scaffolding**: `mythfolk/datapack` + `mythfolk/resourcepack` with
+  correct `pack.mcmeta` files. Formats for 26.2, read off packs that ship for it:
+  **data = 107** (Terralith 26.2), **resource = 88** (Patrix 26.2). World
+  DataVersion is 4903.
 - [ ] **M1 — first elf skin**: one 64×64 villager retexture (`villager2.png`),
   ETF rule limiting it to forest biomes, verified in-game (`/summon villager`
   in a forest vs plains)
