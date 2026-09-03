@@ -84,14 +84,14 @@ pinned in [manifest.json](../manifest.json).
 | Bliss Shader | v2.1.2 | 610844 | 7251787 | **Default shader.** Tagged 26.2; ≥2.1.0 = Distant Horizons support |
 | Photon Shader | v1.3b | 1312687 | 7927503 | **Optional.** Best realistic sun/moon/sky, DH support — but newest tag is 26.1.2, unconfirmed on 26.2. Marked non-required in the manifest |
 | Hyper Realistic Sky | v3.9 | 622551 | 8285672 | Resource pack, Nuit-native format, tagged 26.2. Realistic sun/moon/clouds when shaders are off |
-| Epic Adventures | 1.21.11+67 | 406771 | 8533674 | **Default block/item textures** — 32x stylized-realistic medieval fantasy. Newest tag is 1.21.11: loads on 26.2 with an "older pack" warning; 26.2's new blocks fall back to vanilla textures until it updates |
-| Patrix 32x (basic) | 26.2 | 785390 | 8788976 | **Optional alternative** — realistic, made for shaders (labPBR normals/speculars; enable labPBR options in Bliss). Looks wrong without shaders. Pick Epic Adventures OR Patrix, not both |
-| Fresh Animations | 1.10.5 | 453763 | 7854681 | Lively animal/mob models + animations via EMF (by FreshLX, who also made Patrix's mob animations). **Load ABOVE Patrix** — overrides Patrix's WIP 26.2 mob models with working ones |
+| Epic Adventures | 1.21.11+67 | 406771 | 8533674 | **Optional alternate base pack** — 32x stylized-realistic medieval fantasy. Newest tag is 1.21.11: loads on 26.2 with an "older pack" warning; 26.2's new blocks fall back to vanilla textures until it updates |
+| Patrix 32x (basic) | 26.2 | 785390 | 8788976 | **Optional alternative** — realistic, made for shaders (labPBR normals/speculars; enable labPBR options in your shader). Looks wrong without shaders. Only one base pack enabled at a time |
+| Fresh Animations | 1.10.5 | 453763 | 7854681 | Lively animal/mob models + animations via EMF (by FreshLX, who also made Patrix's mob animations). **Load ABOVE the base pack** — and above Patrix in particular, where it overrides Patrix's WIP 26.2 mob models with working ones |
 | FA: Quivers | 2.2 | 1346077 | 7674520 | Official FA addon — visible quivers on skeletons. Load above base FA |
 | FA: Spiders | 2.2 | 1346116 | 7999323 | Official FA addon — reworked spiders. Load above base FA |
 | FA: Details | 2.3 | 1346132 | 7999513 | Official FA addon — extra creature detail (26.1+ only; includes former Slamacow content). Load above base FA |
 | FA: Emissive | 1.6 | 1346083 | 7999667 | Official FA addon — glowing eyes/parts via ETF. Load above base FA |
-| Alacrity | 26.2+38 | 520028 | 8612633 | **Optional alternate base pack** — 32x rustic-realistic, 100% complete incl. mobs, no shader-PBR. Swap into Patrix's bottom slot; never two base packs at once |
+| Alacrity | 26.2+38 | 520028 | 8612633 | **Default block/item textures** — 32x rustic-realistic, 100% complete incl. mobs, no shader-PBR (nothing to enable in the shader). Pre-enabled in overrides/options.txt; never two base packs at once |
 
 ## Not in the pack yet (watching / porting)
 

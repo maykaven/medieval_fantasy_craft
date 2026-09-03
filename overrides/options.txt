@@ -2,5 +2,5 @@ renderDistance:12
 simulationDistance:9
 graphicsMode:1
 gamma:1.0
-maxFps:160
-resourcePacks:["vanilla","continuity:default","continuity:glass_pane_culling_fix","file/Patrix_26.2_32x_basic.zip","file/FreshAnimations_v1.10.5.zip","file/FA+Details-v2.3.zip","file/FA+Emissive-v1.6.zip","file/FA+Quivers-v2.2.zip","file/FA+Spiders-v2.2.zip","file/Hyper_Realistic_Sky_[v3.9].zip"]
+maxFps:60
+resourcePacks:["vanilla","continuity:default","continuity:glass_pane_culling_fix","file/Alacrity.zip","file/FreshAnimations_v1.10.5.zip","file/FA+Details-v2.3.zip","file/FA+Emissive-v1.6.zip","file/FA+Quivers-v2.2.zip","file/FA+Spiders-v2.2.zip","file/Hyper_Realistic_Sky_[v3.9].zip"]

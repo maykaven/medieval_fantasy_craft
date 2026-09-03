@@ -25,7 +25,7 @@ RPG-only content lives in `manifest.rpg.json` + `overrides-rpg/`.
 | Great shaders | **Iris + Sodium**, with **Bliss v2.1.2** as the default shader (verified on 26.2, shades Distant Horizons' far terrain). **Photon** included as the optional cinematic pick — best-in-class realistic sun/moon/sky, but its newest build is tagged 26.1.2, so treat it as "try and see" until it updates |
 | Real skybox sun & moon | **Nuit** (successor of FabricSkyboxes) + the **Hyper Realistic Sky** resource pack (v3.9, Nuit-native format) |
 | Medieval fantasy world | **Towns & Towers**, **ChoiceTheorem's Overhauled Villages**, **Better Combat**, **Farmer's Delight Refabricated**, **Waystones** |
-| Medieval look | **Epic Adventures** 32x textures (stylized-realistic medieval fantasy) as the default, **Patrix 32x** as the optional shader-maxed realistic alternative |
+| Medieval look | **Alacrity** 32x textures (rustic-realistic, 100% complete incl. mobs) as the default, with **Patrix 32x** (shader-maxed realistic) and **Epic Adventures** (painterly medieval) as optional swaps |
 | Fantasy races | **Goblin Traders** and **Illager Invasion** populate the world (both editions). **RPG edition only:** DAG Mod's playable Elf/Dwarf/Orc/Human races with classes and quests. The full elves/dwarves/orcs faction experience arrives when the Middle-earth mod reaches 26.x (see docs/MODLIST.md watch list) |
 
 Full mod list with versions, IDs and licenses: [docs/MODLIST.md](docs/MODLIST.md).
@@ -70,14 +70,16 @@ app imports and the CurseForge site accepts as a modpack submission.
      Medium**, then restart.
 4. **Resource packs — pre-configured**: the pack ships with the proven setup
    already enabled, top → bottom: **Hyper Realistic Sky → FA addons (Spiders,
-   Quivers, Emissive, Details) → Fresh Animations → Patrix**. Verify it looks
-   like that and you're done. For Patrix, turn on the labPBR emissive/subsurface
-   options in Bliss's shader settings — it's built for shaders and looks wrong
-   without them. (Continuity, EMF and ETF in the pack supply the connected
+   Quivers, Emissive, Details) → Fresh Animations → Alacrity**. Verify it looks
+   like that and you're done. Alacrity ships complete (mobs included) and has no
+   shader-PBR, so there is nothing extra to switch on in the shader.
+   (Continuity, EMF and ETF in the pack supply the connected
    textures and entity models/textures everything here depends on.)
-   Alternate base looks — swap into Patrix's bottom slot, **never two base packs
+   Alternate base looks — swap into Alacrity's bottom slot, **never two base packs
    at once** (stacked base packs mix entity textures and mobs render broken):
-   **Alacrity** (rustic-realistic, complete) or **Epic Adventures** (painterly
+   **Patrix 32x** (realistic, built for shaders — turn on the labPBR
+   emissive/subsurface options in your shader's settings) or **Epic Adventures**
+   (painterly
    medieval; tagged 1.21.11 — confirm the "older version" prompt, fine on 26.2).
    Whatever the base, **Fresh Animations stays above it** so its animal models
    win.
