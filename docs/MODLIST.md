@@ -59,7 +59,7 @@ pinned in [manifest.json](../manifest.json).
 
 | Mod | Version | Project ID | File ID | Notes |
 |---|---|---|---|---|
-| DAG Mod | 1.10.0 | Modrinth `lFbgrVlP` | embedded jar | **Playable Human/Dwarf/Elf/Orc races** × Warrior/Mage/Rogue classes, quests, merchant NPCs, bosses, extra dimensions. CC0 — jar embedded in overrides/mods (fetched by build.ps1, ~97MB, not on CurseForge). Experimental: small solo project, remove `dagmod-*.jar` from the instance mods folder if it misbehaves |
+| DAG Mod | 1.10.0 | Modrinth `lFbgrVlP` | embedded jar | **RPG edition only.** Playable Human/Dwarf/Elf/Orc races × Warrior/Mage/Rogue classes, quests, merchant NPCs, bosses, extra dimensions. CC0 — jar embedded in overrides-rpg/mods (fetched by build.ps1, ~97MB, not on CurseForge). Experimental: small solo project, remove `dagmod-*.jar` from the instance mods folder if it misbehaves |
 | Goblin Traders | 1.12.0 | 363703 | 8403603 | Goblin merchant NPCs underground and in the Nether (MrCrayfish official). Requires Framework |
 | Framework | 0.13.26 | 549225 | 8403587 | Goblin Traders dependency |
 | Illager Invasion | 26.2.0 | 891324 | 8275993 | New illager types, structures and raid pressure — the closest 26.2-Fabric thing to orc war bands. Requires Puzzles Lib + Forge Config API Port |

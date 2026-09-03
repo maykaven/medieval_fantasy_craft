@@ -1,14 +1,11 @@
-# Build output (the pack zip we export for CurseForge)
-# Committed copies for download live in releases/ (small zips only;
-# since v0.4.0 the zip embeds a ~97MB jar and is built locally via build.ps1)
+# Build output (the pack zips we export for CurseForge)
+# World-edition zips are small and committed to releases/ for download.
+# RPG-edition zips embed a ~97MB jar — build locally via ./build.ps1 -Variant rpg
 build/
-releases/*.zip
-!releases/medieval-fantasy-craft-0.1.0.zip
-!releases/medieval-fantasy-craft-0.2.*.zip
-!releases/medieval-fantasy-craft-0.3.*.zip
+releases/medieval-fantasy-craft-rpg-*.zip
 
 # Embedded jars are fetched by build.ps1, not committed
-overrides/mods/*.jar
+overrides-rpg/mods/*.jar
 
 # Local testing junk
 run/

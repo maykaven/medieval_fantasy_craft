@@ -5,6 +5,17 @@ A medieval-fantasy CurseForge modpack for **Minecraft Java 26.2 "Chaos Cubed"** 
 shaders, a realistic sun/moon skybox, and a world full of villages, castles,
 dungeons and knights.
 
+## Two editions
+
+| Edition | Version line | What it is |
+|---|---|---|
+| **Medieval Fantasy Craft** (`manifest.json`) | 0.4.x | The fantasy **world**: worldgen, visuals, structures, goblin traders, illager war bands. Vanilla player mechanics — no race/class systems |
+| **Medieval Fantasy Craft RPG** (`manifest.rpg.json`) | 1.x | Everything in the world edition **plus player systems**: playable Elf/Dwarf/Orc/Human races and Warrior/Mage/Rogue classes (DAG Mod), quests, RPG progression |
+
+Both build from this repo: `./build.ps1` produces both zips (`-Variant world` or
+`-Variant rpg` for just one). Mod updates land in both editions automatically;
+RPG-only content lives in `manifest.rpg.json` + `overrides-rpg/`.
+
 ## The pillars
 
 | Goal | How |
@@ -15,7 +26,7 @@ dungeons and knights.
 | Real skybox sun & moon | **Nuit** (successor of FabricSkyboxes) + the **Hyper Realistic Sky** resource pack (v3.9, Nuit-native format) |
 | Medieval fantasy world | **Towns & Towers**, **ChoiceTheorem's Overhauled Villages**, **Better Combat**, **Farmer's Delight Refabricated**, **Waystones** |
 | Medieval look | **Epic Adventures** 32x textures (stylized-realistic medieval fantasy) as the default, **Patrix 32x** as the optional shader-maxed realistic alternative |
-| Fantasy races | **DAG Mod** — playable Elf/Dwarf/Orc/Human with classes and quests (embedded, experimental); **Goblin Traders** and **Illager Invasion** populate the world. The full elves/dwarves/orcs faction experience arrives when the Middle-earth mod reaches 26.x (see docs/MODLIST.md watch list) |
+| Fantasy races | **Goblin Traders** and **Illager Invasion** populate the world (both editions). **RPG edition only:** DAG Mod's playable Elf/Dwarf/Orc/Human races with classes and quests. The full elves/dwarves/orcs faction experience arrives when the Middle-earth mod reaches 26.x (see docs/MODLIST.md watch list) |
 
 Full mod list with versions, IDs and licenses: [docs/MODLIST.md](docs/MODLIST.md).
 Mods still stuck on older Minecraft (and how we port them ourselves): [docs/PORTING.md](docs/PORTING.md).
