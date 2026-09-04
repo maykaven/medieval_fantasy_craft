@@ -95,6 +95,25 @@ pinned in [manifest.json](../manifest.json).
 | FA: Emissive | 1.6 | 1346083 | 7999667 | Official FA addon — glowing eyes/parts via ETF. Load above base FA |
 | Alacrity | 26.2+38 | 520028 | 8612633 | **Default block/item textures** — 32x rustic-realistic, 100% complete incl. mobs, no shader-PBR (nothing to enable in the shader). Pre-enabled in overrides/options.txt; never two base packs at once |
 
+## Client-side extras (install yourself — deliberately not bundled)
+
+Useful client mods that are **not** in either manifest. All three are restrictively
+licensed, and the ground rules in [MYTHFOLK-PLAN.md](MYTHFOLK-PLAN.md) rule out
+bundling All-Rights-Reserved work. Installing them personally is fine; shipping
+their jars in `overrides/` is not. The clean route for publishing would be
+CurseForge manifest entries — a reference rather than redistribution — which needs
+their CurseForge project and file IDs.
+
+| Mod | Version | Source | License | Why |
+|---|---|---|---|---|
+| Skin Shuffle | 2.12.0+26.2 | Modrinth `3s19I5jr` | All Rights Reserved | In-game skin carousel. Needed to use the [heritage skins](../skins/). 26.2 build is beta channel |
+| YetAnotherConfigLib | 3.9.6+26.2 | Modrinth `1eAoo2KR` | LGPL-3.0 | Hard dependency of Skin Shuffle — Fabric will not start without it |
+| 3D Skin Layers | 1.11.2 | Modrinth `zV5r3pPn` | tr7zw Protective | Renders the skin's outer layer with real depth. The heritage skins put beards, hair and harnesses on layer 2 specifically for this |
+
+Freecam **is** bundled (MIT), fetched from Modrinth by `build.ps1` into
+`overrides/mods/` for both editions — an out-of-body camera is how you inspect your
+own character.
+
 ## Not in the pack yet (watching / porting)
 
 | Mod | Stuck at | License | Plan |
