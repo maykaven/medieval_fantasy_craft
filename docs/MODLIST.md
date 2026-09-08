@@ -1,6 +1,6 @@
 # Mod list — Medieval Fantasy Craft
 
-Target: **Minecraft Java 26.2, Fabric loader 0.19.3.** All versions/IDs verified
+Target: **Minecraft Java 26.2, Fabric loader 0.19.5.** All versions/IDs verified
 against CurseForge on **2026-09-01**. File IDs are the exact 26.2 Fabric files
 pinned in [manifest.json](../manifest.json).
 
@@ -81,7 +81,7 @@ pinned in [manifest.json](../manifest.json).
 | Mod Menu | 20.0.1 | 308702 | 8402669 | In-game settings screens for Fabric mods (Continuity, ETF, etc.) |
 | Text Placeholder API | 3.1.0-beta.1 | 1037459 | 8271471 | Mod Menu dependency |
 | Not Enough Animations | 1.12.4 | 433760 | 8274928 | Player animations: eating, map-holding, climbing, boat-rowing. Works standalone — no EMF bridge needed |
-| Fabric Language Kotlin | 1.13.13+kotlin.2.4.10 | 308769 | 8439967 | Particle Core dependency (Kotlin runtime) |
+| Fabric Language Kotlin | 1.14.1+kotlin.2.4.20 | 308769 | 8829788 | Particle Core dependency (Kotlin runtime). 1.14+ requires Fabric Loader 0.19.5+ — keep the manifest's loader id in sync when updating this mod |
 | Fzzy Config | 0.7.6+26.2 | 1005914 | 8261915 | Particle Core dependency (config library) |
 | Bliss Shader | v2.1.2 | 610844 | 7251787 | **Default shader.** Tagged 26.2; ≥2.1.0 = Distant Horizons support |
 | Photon Shader | v1.3b | 1312687 | 7927503 | **Optional.** Best realistic sun/moon/sky, DH support — but newest tag is 26.1.2, unconfirmed on 26.2. Marked non-required in the manifest |

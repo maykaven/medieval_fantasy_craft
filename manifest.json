@@ -3,7 +3,7 @@
     "version": "26.2",
     "modLoaders": [
       {
-        "id": "fabric-0.19.3",
+        "id": "fabric-0.19.5",
         "primary": true
       }
     ]
@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Medieval Fantasy Craft",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "author": "maykaven",
   "files": [
     {
@@ -76,7 +76,7 @@
     },
     {
       "projectID": 308769,
-      "fileID": 8439967,
+      "fileID": 8829788,
       "required": true
     },
     {
