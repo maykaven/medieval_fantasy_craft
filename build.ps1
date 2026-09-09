@@ -34,6 +34,16 @@ if (-not (Test-Path $freecamJar)) {
     Invoke-WebRequest 'https://cdn.modrinth.com/data/XeEZ3fK2/versions/r125dZ2j/freecam-fabric-1.4.1%2Bmc26.2.jar' -OutFile $freecamJar
 }
 
+# Terrain Blend (custom) - our GPL-3.0 derivative of Grass Overlay by Hiveko.
+# Committed as editable source in terrain-blend/; zipped into overrides at build
+# time (the zip is gitignored) so both editions ship it. Requires Continuity.
+$tbDir = Join-Path $root 'overrides/resourcepacks'
+$tbZip = Join-Path $tbDir 'Terrain Blend (custom).zip'
+New-Item -ItemType Directory -Force $tbDir | Out-Null
+if (Test-Path $tbZip) { Remove-Item $tbZip -Force }
+Compress-Archive -Path (Join-Path $root 'terrain-blend/*') -DestinationPath $tbZip
+Write-Host "Zipped Terrain Blend -> overrides/resourcepacks/"
+
 if ($Variant -in @('rpg','all')) {
     # Modrinth-only embedded jar (CC0); fetched, not committed
     $dagJar = Join-Path $root 'overrides-rpg/mods/dagmod-1.10.0.jar'

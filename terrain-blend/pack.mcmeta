@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "pack_format": 34,
+    "supported_formats": [34, 107],
+    "min_format": 34,
+    "max_format": 107,
+    "description": "Terrain Blend (custom) - grass + dirt overlay on all solid blocks"
+  }
+}

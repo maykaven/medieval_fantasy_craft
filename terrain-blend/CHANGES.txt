@@ -1,0 +1,5 @@
+Derivative of 'Grass Overlay' v1.4.1 by Hiveko (GPL-3.0).
+Changes by Medieval Fantasy Craft:
+- Expanded grass overlay matchBlocks to ~all solid full blocks.
+- Added a dirt overlay (04_dirt_block) so dirt creeps onto neighbours too.
+Original LICENSE (GPL-3.0) retained.

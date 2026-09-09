@@ -9,6 +9,8 @@ releases/medieval-fantasy-craft-rpg-*.zip
 # Third-party jars are fetched by build.ps1, not committed
 overrides-rpg/mods/*.jar
 overrides/mods/*.jar
+# Terrain Blend zip is generated from terrain-blend/ source by build.ps1
+overrides/resourcepacks/*.zip
 # ...except our own, which is 7KB and built from racescale-mod/
 !overrides-rpg/mods/racescale-*.jar
 
