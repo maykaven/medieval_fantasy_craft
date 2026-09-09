@@ -24,15 +24,8 @@ function Build-Pack($manifestFile, $modlistFile, $extraOverrides, $slug) {
     Write-Host "Built $out"
 }
 
-# Freecam (MIT, client-side) - Modrinth-only, so fetched rather than listed in the
-# manifest. Ships in both editions: an out-of-body camera is generally useful, and
-# it is how you inspect your own character.
-$freecamJar = Join-Path $root 'overrides/mods/freecam-fabric-1.4.1+mc26.2.jar'
-if (-not (Test-Path $freecamJar)) {
-    New-Item -ItemType Directory -Force (Join-Path $root 'overrides/mods') | Out-Null
-    Write-Host "Fetching Freecam 1.4.1 from Modrinth..."
-    Invoke-WebRequest 'https://cdn.modrinth.com/data/XeEZ3fK2/versions/r125dZ2j/freecam-fabric-1.4.1%2Bmc26.2.jar' -OutFile $freecamJar
-}
+# Freecam is now referenced via the CurseForge manifest (project 557076), so it no
+# longer needs fetching here - the CF app downloads it into mods/ on import.
 
 # Terrain Blend (custom) - our GPL-3.0 derivative of Grass Overlay by Hiveko.
 # Committed as editable source in terrain-blend/; zipped into overrides at build

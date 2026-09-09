@@ -9,8 +9,8 @@ dungeons and knights.
 
 | Edition | Version line | What it is |
 |---|---|---|
-| **Medieval Fantasy Craft** (`manifest.json`) | 0.4.x | The fantasy **world**: worldgen, visuals, structures, goblin traders, illager war bands. Vanilla player mechanics — no race/class systems |
-| **Medieval Fantasy Craft RPG** (`manifest.rpg.json`) | 1.x | Everything in the world edition **plus player systems**: playable Elf/Dwarf/Orc/Human races and Warrior/Mage/Rogue classes (DAG Mod), quests, RPG progression |
+| **Medieval Fantasy Craft** (`manifest.json`) | 0.6.x | The fantasy **world**: worldgen, visuals, structures, goblin traders, illager war bands. Vanilla player mechanics — no race/class systems |
+| **Medieval Fantasy Craft RPG** (`manifest.rpg.json`) | 1.2.x | Everything in the world edition **plus player systems**: playable Elf/Dwarf/Orc/Human races and Warrior/Mage/Rogue classes (DAG Mod), quests, RPG progression |
 
 Both build from this repo: `./build.ps1` produces both zips (`-Variant world` or
 `-Variant rpg` for just one). Mod updates land in both editions automatically;
@@ -116,6 +116,14 @@ app imports and the CurseForge site accepts as a modpack submission.
   yet (they're on 1.21.1). See [docs/PORTING.md](docs/PORTING.md) for the plan.
 - **26.3** lands this month; the pack bumps once Fabric API / Sodium / Iris / DH
   publish 26.3 builds.
+- **Skin Shuffle is a manual add.** It has no 26.2 build on CurseForge (Modrinth-
+  only, All-Rights-Reserved), so it can't ship in the manifest. The heritage skins
+  need it — after importing, add it from <https://modrinth.com/mod/skinshuffle>
+  (its dependencies 3D Skin Layers and YACL are already in the pack). See
+  [docs/MODLIST.md](docs/MODLIST.md).
+- The pack now mirrors the live setup (v0.6.0 / v1.2.0): 66 CurseForge files pinned
+  to the played versions, load order in `overrides/options.txt`. Re-set the CF
+  profile's RAM to 8–12 GB after importing (that's a launcher setting, not in the zip).
 
 ## Publishing on CurseForge
 

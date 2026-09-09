@@ -127,3 +127,35 @@ own character.
 | Small Ships | 1.21.4 | ARR | Wait (stale ~16 months — may not come) |
 | Astrocraft | 1.21.4 | MIT (no public source found) | Optional nicety; contact author |
 | Terrarium (real Earth terrain) | 1.21.8 | CC-BY-NC-SA | The only modern "actual Earth" worldgen (Terra 1-to-1 successor). NC license bars CurseForge pack distribution; noted for private use only |
+
+---
+
+## v0.6.0 (World) / v1.2.0 (RPG) — full live-config sync (2026-09-09)
+
+Both manifests were regenerated from the live instance's `minecraftinstance.json`
+(authoritative CurseForge project/file IDs), so the install pack now reproduces the
+actual played setup: **66 CurseForge-hosted files**, all pinned to the versions in
+use. Notable additions since the last itemised tables above:
+
+- **Mods added:** 3D Skin Layers (521480), YetAnotherConfigLib (667299), and
+  Freecam moved from a Modrinth-fetch to a CurseForge reference (557076).
+- **Version bumps:** Fabric API 0.160.0, Balm 26.2.0.8, Waystones 26.2.0.12,
+  Entity Model Features 3.3.5, Lithostitched 1.8.0+beta6, Hyper Realistic Sky v3.10.
+- **Resource packs added (all CurseForge-hosted, referenced in the manifest):**
+  Round Trees (296616), Realistic Chests (1016013), Freshly Modded / F.M.R.P
+  (961754), LowOnFire (580683), Extended Illumina (380413), Actually 3D Blocks &
+  Items (1509983), Glow Lichen 3D (1409336), and the Fresh Animations addons
+  All-Extensions (813608), Creepers (1346049), Player (1281029).
+- **c2me** is marked `required: false` (you have it disabled in the instance).
+- **Enabled load order** is captured verbatim in `overrides/options.txt`
+  (Patrix + Epic Adventures base → FA + all FA addons → Terrain Blend → Actually 3D
+  → Glow Lichen 3D → Hyper Realistic Sky on top).
+
+### ⚠️ One manual add: Skin Shuffle
+
+**Skin Shuffle has no Minecraft 26.2 build on CurseForge** (2.12.0+26.2 is
+Modrinth-only) and it's All-Rights-Reserved, so it can't be referenced in a CF
+manifest or legally bundled. The [heritage skins](../skins/) need it. After
+importing the pack, add it yourself from <https://modrinth.com/mod/skinshuffle>
+(its deps 3D Skin Layers and YACL are already in the pack). Everything else installs
+automatically.

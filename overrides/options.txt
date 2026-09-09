@@ -3,4 +3,4 @@ simulationDistance:9
 graphicsMode:1
 gamma:1.0
 maxFps:60
-resourcePacks:["vanilla","continuity:default","continuity:glass_pane_culling_fix","file/Alacrity.zip","file/FreshAnimations_v1.10.5.zip","file/FA+Details-v2.3.zip","file/FA+Emissive-v1.6.zip","file/FA+Quivers-v2.2.zip","file/FA+Spiders-v2.2.zip","file/Hyper_Realistic_Sky_[v3.9].zip"]
+resourcePacks:["vanilla","continuity:default","continuity:glass_pane_culling_fix","file/Patrix_26.2_32x_basic.zip","file/§lEpic Adventures.zip","file/Round-Trees-8.3.zip","file/Realistic Chests - 2.0.zip","file/FreshAnimations_v1.10.5.zip","file/FA+Details-v2.3.zip","file/FA+Emissive-v1.6.zip","file/FA+Quivers-v2.2.zip","file/FA+Spiders-v2.2.zip","file/FA+All_Extensions-v1.9.2.zip","file/FA+Creepers-v2.1.zip","file/FA+Player-v1.1.zip","file/Freshly Modded 3.0.4.zip","file/LowOnFire v26.1§8.zip","file/§eExtended_Illumina_26.2.x.zip","file/Terrain Blend (custom).zip","file/§f§lActually §6§l3D §fBlocks \u0026 Items!§7.zip","file/3DLichen.zip","file/Hyper_Realistic_Sky_[v3.10].zip"]
