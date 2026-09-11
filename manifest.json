@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Medieval Fantasy Craft",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "author": "maykaven",
   "files": [
     {
@@ -167,6 +167,11 @@
     {
       "projectID": 580683,
       "fileID": 7825035,
+      "required": true
+    },
+    {
+      "projectID": 610844,
+      "fileID": 7251787,
       "required": true
     },
     {
